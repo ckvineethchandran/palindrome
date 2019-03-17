@@ -28,7 +28,12 @@ resource "aws_ecs_task_definition" "palindrome" {
     "image": "ckvineethchandran/postgres:latest",
     "cpu": 10,
     "memory": 500,
-    "essential": true
+    "essential": true,
+	    "portMappings": [
+      {
+        "containerPort": 5432,
+        "hostPort": 5432
+      }
   }
 ]
 DEFINITION
