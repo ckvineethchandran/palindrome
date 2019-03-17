@@ -1,0 +1,19 @@
+{
+  "name": "Palindrome_app",
+  "version": "1.0.0",
+  "description": "Palindrome app on Docker",
+  "author": "Vineeth Chandran",
+  "main": "index.js",
+    "engines": {
+    "node": "7.10.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+	"pg": "6.2.2",
+	"express": "4.15.3",
+	"body-parser": "1.18.3"
+	
+  }
+}
